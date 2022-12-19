@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icecream</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Seymour+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header_wrapper">
+            <ul class="header-mob">
+                <li>
+                    <svg class="header-mob__icon" width="37" height="40">
+                        <use href="/images/symbol-defs.svg#icon-icecream">
+                        </use>
+                    </svg> 
+                </li>
+                <li>
+                    <button class="mob-button">
+                        <svg 
+                        width="32" 
+                        height="32" 
+                        aria-label="Переключатель мобильного меню"
+                        aria-expanded="false"
+                        >
+                          <use class="mob-button__open" href="/images/symbol-defs.svg#icon-eva_menu-fill-1"></use>
+                        </svg>
+                      </button>
+                </li>
+            </ul>
+            <h1 class="header_title">ice cream made with passion</h1>
+            <ul class="click-items">
+                <li class="click-items_button"><button type="button" class="button">Products</button></li>
+                <li class="click-items_link">How it’s made?</li>
+            </ul>
+            <div class="header-iceream">
+                <picture class="header-iceream">
+                    <source srcset="./images/mobile/icecream-header/icecream.png 1x, ./images/mobile/icecream-header/icecream@2x.png 2x" media="(min-width: 320px)"/>
+                    <img src="./images/mobile/icecream-header/icecream.png 1x" alt="icecream" width="117" height="217" />
+                </picture>
+            </div>
+            <!-- <div class="dots-header">
+                <picture >
+                    <source srcset="./images/mobile/icecream-header/dots-header.png 1x, ./images/mobile/icecream-header/dots-header@2x.png 2x" media="(min-width: 320px)"/>
+                    <img src="./images/mobile/icecream-header/dots-header.png 1x" alt="Icecream" width="320" height="50" />
+                </picture>
+            </div> -->
+        </div>
+
+
+            
+    </header>
+
+</body>
+</html>

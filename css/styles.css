@@ -1,0 +1,105 @@
+li {
+    list-style-type: none;
+  }
+
+  p, ul, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin: 0 auto;
+}
+
+.header {
+    background: #84A178;
+    background-image: url(../images/mobile/icecream-header/dots-header.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.header_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+}
+
+.header_title {
+    text-transform: uppercase;
+}
+
+.header-mob {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.mob-button {
+    display: flex;
+    border: 0;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    fill: #F8D24E;
+}
+
+.header-mob__icon {
+    display: block;
+    fill: #F8D24E;
+}
+
+.header_title {
+    display: block;
+    font-family: 'Seymour One', sans-serif;
+    font-style: normal;
+    font-size: 26px;
+    line-height: calc(33 / 26);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    margin-bottom: 32px;
+}
+
+.click-items {
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+
+}
+
+
+.button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12); 
+    align-items: center;
+    text-align: center;
+    padding: 11px 26px;
+    border-radius: 8px;
+    border: 2px solid #F8D24E;
+    background-color: transparent;
+    color: #000000;
+}
+
+.click-items_link {
+    margin-left: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12); 
+    text-decoration-line: underline;
+    color: #F8D24E;
+}
+
+.header-iceream {
+    display: flex;
+    justify-content: center;
+    
+}
+
