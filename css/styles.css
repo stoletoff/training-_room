@@ -15,7 +15,8 @@ body {
 
 .header {
     background: #84A178;
-    background-image: url(../images/mobile/icecream-header/dots-header.png);
+    background-image: url(../images/mobile/icecream-header/icecream.png), 
+    url(../images/mobile/icecream-header/dots-header.png);
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -63,10 +64,10 @@ body {
     margin-bottom: 32px;
 }
 
-.click-items {
+.click-items_list {
     display: flex;
     align-items: center;
-    margin-bottom: 19px;
+    margin-bottom: 236px;
 
 }
 
@@ -103,3 +104,6 @@ body {
     
 }
 
+.click-items {
+    display: flex;
+}
