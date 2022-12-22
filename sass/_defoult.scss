@@ -153,9 +153,12 @@ img {
     }
 }
 
-.hero-items__link:hover,
-.hero-items__link:focus {
+.hero-items__link:hover { 
     color: #0A8817;
+}
+
+.hero-items__link:focus {
+    color: #FCFCFC;
 }
 // Hero-images 
 .hero-img{
