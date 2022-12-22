@@ -7,55 +7,42 @@
     <title>Icecream</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Seymour+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
 </head>
 <body>
-    <header class="header">
-        <div class="header_wrapper">
-            <ul class="header-mob">
-                <li>
-                    <svg class="header-mob__icon" width="37" height="40">
-                        <use href="/images/symbol-defs.svg#icon-icecream">
-                        </use>
-                    </svg> 
-                </li>
-                <li>
-                    <button class="mob-button">
-                        <svg 
-                        width="32" 
-                        height="32" 
-                        aria-label="Переключатель мобильного меню"
-                        aria-expanded="false"
-                        >
-                          <use class="mob-button__open" href="/images/symbol-defs.svg#icon-eva_menu-fill-1"></use>
-                        </svg>
-                      </button>
-                </li>
-            </ul>
-            <h1 class="header_title">ice cream made with passion</h1>
-            <div class="click-items">
-                <ul class="click-items_list">
-                    <li class="click-items_button"><button type="button" class="button">Products</button></li>
-                    <li class="click-items_link">How it’s made?</li>
+    <header>
+        <section class="hero"> 
+            <div class="hero-wrapper">
+                <ul class="hero-mob">
+                    <li>
+                        <svg class="header-mob-icon" width="37" height="40">
+                            <use href="/images/symbol-defs.svg#icon-icecream">
+                            </use>
+                        </svg> 
+                    </li>
+                    <li>
+                        <button class="mob-button">
+                            <svg 
+                            width="32" 
+                            height="32" 
+                            aria-label="Переключатель мобильного меню"
+                            aria-expanded="false"
+                            >
+                              <use class="mob-button-open" href="/images/symbol-defs.svg#icon-eva_menu-fill-1"></use>
+                            </svg>
+                        </button>
+                    </li>
                 </ul>
+                <h1 class="hero-title">ice cream made with passion</h1>
+                <div class="click-items">
+                    <ul class="click-items-list">
+                        <li class="click-items-button"><button type="button" class="products-button">Products</button></li>
+                        <li class="click-items-link">How it’s made?</li>
+                    </ul>
+                </div>
             </div>
-            
-            <!-- <div class="header-iceream">
-                <picture class="header-iceream">
-                    <source srcset="./images/mobile/icecream-header/icecream.png 1x, ./images/mobile/icecream-header/icecream@2x.png 2x" media="(min-width: 320px)"/>
-                    <img src="./images/mobile/icecream-header/icecream.png 1x" alt="icecream" width="117" height="217" />
-                </picture>
-            </div> -->
-            <!-- <div class="dots-header">
-                <picture >
-                    <source srcset="./images/mobile/icecream-header/dots-header.png 1x, ./images/mobile/icecream-header/dots-header@2x.png 2x" media="(min-width: 320px)"/>
-                    <img src="./images/mobile/icecream-header/dots-header.png 1x" alt="Icecream" width="320" height="50" />
-                </picture>
-            </div> -->
-        </div>
-
-
-            
+        </section>
     </header>
 
 </body>

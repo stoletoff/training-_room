@@ -13,29 +13,35 @@ body {
     margin: 0 auto;
 }
 
-.header {
+.hero {
+    max-width: 480px;
+    margin: auto;
     background: #84A178;
     background-image: url(../images/mobile/icecream-header/icecream.png), 
     url(../images/mobile/icecream-header/dots-header.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 768px;
+    }
 }
 
-.header_wrapper {
+.hero-wrapper {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 12px;
 }
 
-.header_title {
-    text-transform: uppercase;
-}
-
-.header-mob {
+.hero-mob {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+}
+
+.header-mob-icon {
+    display: block;
+    fill: #F8D24E;
 }
 
 .mob-button {
@@ -47,12 +53,7 @@ body {
     fill: #F8D24E;
 }
 
-.header-mob__icon {
-    display: block;
-    fill: #F8D24E;
-}
-
-.header_title {
+.hero-title {
     display: block;
     font-family: 'Seymour One', sans-serif;
     font-style: normal;
@@ -64,15 +65,30 @@ body {
     margin-bottom: 32px;
 }
 
-.click-items_list {
+.click-items {
+    display: flex;
+}
+
+.click-items-list {
     display: flex;
     align-items: center;
     margin-bottom: 236px;
 
 }
 
+.click-items-link {
+    margin-left: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12); 
+    text-decoration-line: underline;
+    color: #F8D24E;
+}
 
-.button {
+
+.products-button {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -86,31 +102,19 @@ body {
     background-color: transparent;
     color: #000000;
 }
-
-.click-items_link {
-    margin-left: 12px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15 / 12); 
-    text-decoration-line: underline;
-    color: #F8D24E;
-}
-
+/* 
 .header-iceream {
     display: flex;
     justify-content: center;
     
-}
+} */
 
-.click-items {
-    display: flex;
-}
 
-$primary-color: #FCFCFC;
+
+/* $primary-color: #FCFCFC;
 $secondary-color: #131313;
 $accent-color: #F8D24E;
 $address-color: #D6936D;
 $pale-color: #ABABAB;
 $fontPrimary: Montserrat', sans-serif;
+.header_title { */
