@@ -13,37 +13,65 @@
 <body>
     <header>
         <section class="hero"> 
-            <div class="hero-wrapper">
-                <ul class="hero-mob">
-                    <li>
-                        <svg class="header-mob-icon" width="37" height="40">
-                            <use href="./images/symbol-defs.svg#icon-icecream">
-                            </use>
-                        </svg> 
-                    </li>
-                    <li>
-                        <button class="mob-button">
-                            <svg 
-                            width="32" 
-                            height="32" 
-                            aria-label="Переключатель мобильного меню"
-                            aria-expanded="false"
-                            >
-                              <use class="mob-button-open" href="./images/symbol-defs.svg#icon-eva_menu-fill-1"></use>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
-                <h1 class="hero-title">ice cream made with passion</h1>
-                <div class="click-items">
-                    <ul class="click-items-list">
-                        <li class="click-items-button"><button type="button" class="products-button">Products</button></li>
-                        <li class="click-items-link">How it’s made?</li>
+            <div class="hero__wrapper">
+  
+                <h1 class="hero__title">ice cream made with passion</h1>
+                <div class="hero-items">
+                    <ul class="hero-items__list">
+                        <li><button type="button" class="hero-items__button">Products</button></li>
+                        <li class="hero-items__link">How it’s made?</li>
                     </ul>
                 </div>
+            </div>
+            <ul class="hero-img">
+                <li class="hero-img_dots">
+                    <picture >
+                        <source srcset="./images/mobile/icecream-header/dots-header.png 1x, ./images/mobile/icecream-header/dots-header@2x.png 2x" media="(max-width: 767px)" width="320" height="50"/>
+                        <source srcset="./images/tablet/icecream-header/dots-header.png 1x, ./images/tablet/icecream-header/dots-header@2x.png 2x" media="(max-width: 1199px)" width="768" height="67.79"/>
+                        <source srcset="./images/desktop/icecream-header/dots-header.png 1x, ./images/desktop/icecream-header/dots-header@2x.png 2x" media="(min-width: 1200px)"/>
+                        <img class="img" src="./images/desktop/icecream-header/dots-header.png 1x" alt="Hero dots" width="1200" height="383.46" />
+                    </picture>
+                </li>
+                <li class="hero-img_icecream">
+                    <picture >
+                        <source srcset="./images/mobile/icecream-header/icecream.png 1x, ./images/mobile/icecream-header/icecream@2x.png 2x" media="(max-width: 767px)" width="177" height="217"/>
+                        <source srcset="./images/tablet/icecream-header/icecream.png 1x, ./images/tablet/icecream-header/icecream@2x.png 2x" media="(max-width: 1199px)" width="268" height="329"/>
+                        <source srcset="./images/desktop/icecream-header/icecream.png 1x, ./images/desktop/icecream-header/icecream@2x.png 2x" media="(min-width: 1200px)"/>
+                        <img class="img" src="./images/desktop/icecream-header/icecream.png 1x" alt="Hero ice-cream" width="456" height="560"/>
+                    </picture>
+                </li>
+                <li class="hero-img_varieties">
+                    <picture >
+                        <source srcset="./images/tablet/icecream-header/varieties.png 1x, ./images/tablet/icecream-header/varieties@2x.png 2x" media="(max-width: 1199px)" width="152" height="152"/>
+                        <source srcset="./images/desktop/icecream-header/varieties.png 1x, ./images/desktop/icecream-header/varieties@2x.png 2x" media="(min-width: 1200px)"/>
+                        <img class="img" src="./images/desktop/icecream-header/varieties.png 1x" alt="Hero dots" width="225" height="225" />
+                    </picture>              
+                </li>
+            </ul>
             </div>
         </section>
     </header>
 
 </body>
 </html>
+
+
+
+
+
+
+
+<!-- 
+            <div class="hero-img">
+                <picture class="hero-img_icecream">
+                    <source srcset="./images/mobile/icecream-header/icecream.png 1x, ./images/mobile/icecream-header/icecream@2x.png 2x" media="(max-width: 767px)"/>
+                    <img class="img" src="./images/mobile/icecream-header/icecream.png 1x" alt="Hero ice-cream" max-width="177" max-height="217" />
+                </picture>
+                
+            </div>
+                <picture class="hero-img_dots">
+                    <source srcset="./images/mobile/icecream-header/dots-header.png 1x, ./images/mobile/icecream-header/dots-header@2x.png 2x" media="(max-width: 767px)"/>
+                    <img class="img" src="./images/mobile/icecream-header/dots-header.png 1x" alt="Hero dots" max-width="320" max-height="50" />
+                </picture>
+            <div> -->
+            

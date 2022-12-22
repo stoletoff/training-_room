@@ -13,49 +13,49 @@ body {
   margin: 0 auto;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .hero {
+  position: relative;
   max-width: 480px;
   margin: auto;
   background: #84A178;
-  background-image: url(../images/mobile/icecream-header/icecream.png), url(../images/mobile/icecream-header/dots-header.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    width: 768px;
+    min-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-width: 1200px;
   }
 }
 
-.hero-wrapper {
+.hero__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 12px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__wrapper {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
-.hero-mob {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-
-.header-mob-icon {
+.hero__title {
   display: block;
-  fill: #F8D24E;
-}
-
-.mob-button {
-  display: flex;
-  border: 0;
-  background-color: transparent;
-  justify-content: center;
-  align-items: center;
-  fill: #F8D24E;
-}
-
-.hero-title {
-  display: block;
+  max-width: 247px;
   font-family: "Seymour One", sans-serif;
   font-style: normal;
   font-size: 26px;
@@ -65,30 +65,41 @@ body {
   color: #FCFCFC;
   margin-bottom: 32px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__title {
+    max-width: 247px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 367px;
+    font-size: 38px;
+    line-height: 1.2631578947;
+  }
+}
 
-.click-items {
+.hero-items {
   display: flex;
 }
 
-.click-items-list {
+.hero-items__list {
   display: flex;
   align-items: center;
   margin-bottom: 236px;
 }
-
-.click-items-link {
-  margin-left: 12px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: #F8D24E;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-items__list {
+    margin-bottom: 176px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-items__list {
+    margin-bottom: 332px;
+  }
 }
 
-.products-button {
+.hero-items__button {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -102,17 +113,68 @@ body {
   background-color: transparent;
   color: #000000;
 }
+@media screen and (min-width: 1200px) {
+  .hero-items__button {
+    font-size: 14px;
+    line-height: 1.2857142857;
+  }
+}
 
-/* 
-.header-iceream {
-    display: flex;
-    justify-content: center;
+.hero-items__link {
+  margin-left: 12px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #F8D24E;
+}
+@media screen and (min-width: 1200px) {
+  .hero-items__link {
+    font-size: 14px;
+    line-height: 1.2142857143;
+  }
+}
 
-} */
-/* $primary-color: #FCFCFC;
-$secondary-color: #131313;
-$accent-color: #F8D24E;
-$address-color: #D6936D;
-$pale-color: #ABABAB;
-$fontPrimary: Montserrat', sans-serif;
-.header_title { *//*# sourceMappingURL=main.css.map */
+.hero-img_icecream {
+  position: absolute;
+  bottom: 0;
+  left: 83px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-img_icecream {
+    left: 408px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-img_icecream {
+    left: 652px;
+  }
+}
+
+.hero-img_dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-img_varieties {
+  display: none;
+  position: absolute;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-img_varieties {
+    display: block;
+    bottom: 12px;
+    left: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-img_varieties {
+    display: block;
+    left: 16px;
+    bottom: 65px;
+  }
+}/*# sourceMappingURL=main.css.map */
