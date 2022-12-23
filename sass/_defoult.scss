@@ -1,3 +1,20 @@
+@mixin mobile {
+    @media screen and (min-width: 480px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1200px){
+        @content;
+    }
+}
 // Default-----------------------
 li {
     list-style-type: none;
@@ -55,11 +72,10 @@ $desktop: 1200px;
     // url(../images/mobile/icecream-header/dots-header.png);
     // background-repeat: no-repeat;
     // background-position: bottom;
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    @include tablet() {
         min-width: $tablet;
     }
-
-    @media screen and (min-width: $desktop) {
+    @include desktop {
         min-width: $desktop;
     }
 }
@@ -67,21 +83,20 @@ $desktop: 1200px;
 .container {
     margin: 0 auto;
     padding: 0 20px;
-  
-    @media screen and (min-width: $mobile) {
-      width: $mobile;
+    @include mobile {
+        width: $mobile;
     }
   
-    @media screen and (min-width: $tablet) {
-      width: $tablet;
-      padding: 0px 32px;
+    @include tablet {
+        width: $tablet;
+        padding: 0px 32px;
     }
   
-    @media screen and (min-width: $desktop) {
-      width: $desktop;
-      padding: 0px 16px;
+    @include desktop {
+        width: $desktop;
+        padding: 0px 16px;
     }
-  }
+}
 
 .hero__title {
     display: block;
@@ -93,11 +108,11 @@ $desktop: 1200px;
     text-transform: uppercase;
     color: var(--color-primary);
     margin-bottom: 32px;
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    @include tablet {
         max-width: 247px;
         margin-bottom: 24px;
     }
-    @media screen and (min-width: $desktop) {
+    @include desktop {
         max-width: 367px;
         font-size: 38px;
         line-height: calc(48 / 38);
@@ -116,11 +131,10 @@ $desktop: 1200px;
         display: flex;
         align-items: center;
         margin-bottom: 236px;
-    
-        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        @include tablet {
             margin-bottom: 176px;
         }
-        @media screen and (min-width: $desktop) {
+        @include desktop {
             margin-bottom: 332px;
         }
     }
@@ -136,7 +150,7 @@ $desktop: 1200px;
         border: 2px solid var(--color-accent);
         background-color: transparent;
         color: #000000;
-        @media screen and (min-width: $desktop) {
+        @include desktop {
             font-size: 14px;
             line-height: calc(18 / 14); 
         }
@@ -166,7 +180,7 @@ $desktop: 1200px;
         text-decoration-line: underline;
         color: var(--color-accent);
         transition: background-color var(--transition-duration) var(--cubic-bezier);
-        @media screen and (min-width: $desktop) {
+        @include desktop {
             font-size: 14px;
             line-height: calc(17 / 14); 
         }
@@ -190,12 +204,10 @@ $desktop: 1200px;
         position: absolute;
         bottom: 0;
         left: 83px;
-        
-        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        @include tablet {
             left: 408px;
         }
-    
-        @media screen and (min-width: $desktop) {
+        @include desktop {
             left: 652px;
         }
     }
@@ -209,14 +221,12 @@ $desktop: 1200px;
     &_varieties {
         display: none;
         position: absolute;
-        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        @include tablet {
             display: block;
             bottom: 12px;
-            left: 32px;  
+            left: 32px; 
         }
-        
-       
-        @media screen and (min-width: $desktop) {
+        @include desktop {
             display: block;
             left: 16px;
             bottom: 65px;
@@ -231,21 +241,20 @@ $desktop: 1200px;
 .hero-description {
     display: none;
     position: absolute;
-
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    @include tablet {
         display: block;
         left: 216px;
         bottom: 24px;
         width: 139px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @include desktop {
         display: block;
         left: 257px;
         bottom: 103px;
         width: 200px;
     }
-    
+
     &__item {
         text-align: start;
     }
@@ -255,7 +264,7 @@ $desktop: 1200px;
         line-height: calc(17 / 12);
         margin-bottom: 12px;
         color: var(--color-primary);
-        @media screen and (min-width: $desktop) {
+        @include desktop {
             margin-bottom: 24px;
         }
     }
@@ -279,14 +288,12 @@ $desktop: 1200px;
     position: absolute;
     text-align: right;
     align-items: center;
-
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    @include tablet {
         display: block;
         right: 32px;
         bottom: 205px;
     }
-
-    @media screen and (min-width: $desktop) {
+    @include desktop {
         display: block;
         right: 16px;
         bottom: 368px;
@@ -300,23 +307,23 @@ $desktop: 1200px;
         text-transform: uppercase;
         color: var(--color-secondary);
         margin-bottom: 4px;
-    
-        @media screen and (min-width: $desktop) {
+        @include desktop {
             font-size: 46px;
             line-height: calc(56 / 46);
         }
-    
     }
+
     &__items {
         display: flex;
         justify-content: center;
     }
+
     &__categories {
     
         font-size: 8px;
         line-height: calc(10 / 8);
         color: var(--color-primary);
-        @media screen and (min-width: $desktop) {
+        @include desktop {
             font-size: 14px;
             line-height: calc(17 / 14);
         }

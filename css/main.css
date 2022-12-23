@@ -45,7 +45,7 @@ img {
   margin: auto;
   background: var(--color-bg);
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .hero {
     min-width: 768px;
   }
@@ -89,7 +89,7 @@ img {
   color: var(--color-primary);
   margin-bottom: 32px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .hero__title {
     max-width: 247px;
     margin-bottom: 24px;
